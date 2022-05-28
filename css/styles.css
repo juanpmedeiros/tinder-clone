@@ -25,6 +25,7 @@ body {
     color: #dadfe6;
 }
 
+
 .navbar i:nth-child(1) {
     color: #fe466d;
 }
@@ -81,5 +82,54 @@ body {
 /* ACTIONS */
 .actions {
     display: flex;
+    flex: auto;
+    align-items: center;
+    margin: 1rem 0;
+}
 
+.action {
+    background: #fff;
+    box-shadow: 0 2px 6px 0 rgb(112, 125, 134, 0.14);
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 2rem;
+    transition: transform 500ms ease;
+}
+
+.action:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.actions .action:nth-child(1) {
+    color: #fd5068;
+}
+
+.actions .action:nth-child(2) {
+    margin: 0 1rem;
+    color: #2db1ff;
+    height: 48px;
+    width: 48px;
+    font-size: 1.5rem;
+}
+
+.actions .action:nth-child(3) {
+    color: #1be4a1;
+}
+
+/* DESKTOP VIEW */
+@media(min-width: 1025px) {
+    .photo {
+        width: 367px;
+        height: 684px;
+    }
+
+    .navbar {
+        width: 400px;
+        margin: auto;
+    }
 }
